@@ -1,5 +1,23 @@
-//Example
+## Requirements
 
+Strapi v4 is required.
+
+## Installation
+
+Download
+
+```
+yarn add strapi-format-image-url
+```
+
+or
+
+```
+npm i strapi-format-image-url
+```
+
+## Usage Example
+```
 const strapiFormatImageUrl = require("strapi-format-image-url");
 
 module.exports = createCoreService("api::country.country", {
@@ -10,3 +28,4 @@ module.exports = createCoreService("api::country.country", {
   country.Flag = strapiFormatImageUrl.formatStrapiImage(country.Flag, "thumbnail");
  }
 });
+```
